@@ -9,7 +9,7 @@ After cloning the project, `cd` into the directory and run the following:
 
 - `cp .env.example .env`
 - `composer install`
-- `touch /database/database.sqlite`
+- `touch database/database.sqlite`
 - `php artisan migrate --seed`
 - `php artisan storage:link`
 - `php artisan serve`
