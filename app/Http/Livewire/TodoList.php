@@ -22,6 +22,10 @@ class TodoList extends Component
 
     public function store()
     {
+        if ($this->todoText == '') {
+            return;
+        }
+
         TodoItem::create([
             'todo' => $this->todoText,
             'completed' => false
